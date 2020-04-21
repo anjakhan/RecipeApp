@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Recipe App</title>
+        <link href="/styles/styles.css" rel="stylesheet" ></link>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header class="header">
+                    <div class="container">
+                        <h1 class="header__title">Recipe App</h1>
+                        <h2 class="header__subtitle">Save your Recipes and enjoy Cooking!</h2>
+                    </div>
+                </header>
+
+                <div class="subheader">
+                    <div class="subheader__container">
+                        <input id="recipeTitle" class="title-input" placeholder="Recipe Title">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <textarea id="instruction" class="body-input" placeholder="Cooking Instruction"></textarea>
+
+                    <h3>Ingredients</h3>
+                    <div id="ingredients"></div>
+                    <form id="ingredient-form">
+                        <input type="text" class="input" placeholder="Required Ingredients" name="addIngredient">
+                        <button class="button">Add</button>
+                    </form>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div class="container">
+                    <h1 class="footer__title">Danger Zone</h1>
+                    <button class="button" onclick="location.href='/index.html'">Save Recipe</button>
+                    <button id="removeRecipe" class="button button--secondary">Delete Recipe</button>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="/scripts/edit-bundle.js"></script>
+
+    </body>
+</html>
